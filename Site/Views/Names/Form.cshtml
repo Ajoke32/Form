@@ -1,0 +1,25 @@
+﻿@model Site.Models.UserName
+@{ 
+    Layout = null;
+}
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Form</title>
+    <link rel="stylesheet" href="/css/StyleSheet.css" />
+    <link rel="stylesheet" href="/lib/bootstrap/dist/css/bootstrap.css" />
+</head>
+<body>
+    <div asp-validation-summary="All"></div>
+    <div class="text-center">
+        <form class="p-1" asp-action="Form" method="post">
+            <label asp-for="Name">Your name</label><br>
+            <input asp-for="Name" placeholder="John" /><br>
+            <button class="text" type="submit">Next</button>
+        </form>
+    </div>
+</body>
+</html>
